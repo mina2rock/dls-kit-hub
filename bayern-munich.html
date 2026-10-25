@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bayern Munich  DLS Kits | DLS Kit Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>DLS KIT HUB</h1>
+    <p>Find the latest Dream League Soccer kits.</p>
+</header>
+
+<main class="club-page">
+
+    <a href="index.html">← Back to Home</a>
+
+    <h1>Bayern Munich  2026/27 DLS Kits</h1>
+
+    <p class="club-description">
+        Get the latest Bayern Munich  Dream League Soccer kits.
+        Copy the logo or kit URL below and use it in Dream League Soccer.
+    </p>
+
+
+    <!-- CLUB LOGO -->
+
+    <section class="kit-section">
+
+        <h2>Bayern Munich  DLS Logo</h2>
+
+        <img src="https://i.ibb.co/VpxMhRn7/logo.png"
+     alt="Bayern Munich FC Logo"
+     class="club-logo">
+
+        <div class="url-box">
+            <span id="logo-url">https://i.ibb.co/VpxMhRn7/logo.png</span>
+
+            <button onclick="copyURL('logo-url', this)">
+                Copy
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- HOME KIT -->
+
+    <section class="kit-section">
+
+        <h2>Bayern Munich  2026/27 Home Kit</h2>
+
+        <img src="https://i.ibb.co/rR2HFXDc/home.png"
+     alt="Bayern Munich Home Kit"
+     class="kit-image">
+
+        <div class="url-box">
+        <span id="home-url">https://i.ibb.co/rR2HFXDc/home.png</span>
+
+            <button onclick="copyURL('home-url', this)">
+                Copy
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- AWAY KIT -->
+
+    <section class="kit-section">
+
+        <h2>Bayern Munich  2026/27 Away Kit</h2>
+
+        <img src="https://i.ibb.co/G46kMJDT/away.png"
+     alt="Bayern Munich Away Kit"
+     class="kit-image">
+
+        <div class="url-box">
+            <span id="away-url">https://i.ibb.co/G46kMJDT/away.png</span>
+
+            <button onclick="copyURL('away-url', this)">
+                Copy
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- THIRD KIT -->
+
+    <section class="kit-section">
+
+        <h2>Bayern Munich  2026/27 Third Kit</h2>
+
+        <img src="https://i.ibb.co/g1vR9yt/third.png"
+     alt="Bayern Munich Third Kit"
+     class="kit-image">
+
+        <div class="url-box">
+            <span id="third-url">https://i.ibb.co/g1vR9yt/third.png</span>
+
+            <button onclick="copyURL('third-url', this)">
+                Copy
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- GOALKEEPER HOME -->
+
+    <section class="kit-section">
+
+        <h2>Bayern Munich  Goalkeeper Home Kit</h2>
+
+        <img src="https://i.ibb.co/pBfNzSrz/GK-home.png"
+     alt="Bayern Munich GK Home Kit"
+     class="kit-image">
+>
+
+        <div class="url-box">
+            <span id="gk-home-url">https://i.ibb.co/pBfNzSrz/GK-home.png</span>
+
+            <button onclick="copyURL('gk-home-url', this)">
+                Copy
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- GOALKEEPER AWAY -->
+
+    <section class="kit-section">
+
+        <h2>Bayern Munich  Goalkeeper Away Kit</h2>
+
+        <img src="https://i.ibb.co/zhPKDgWC/GK-away.png"
+     alt="Bayern Munich GK Away Kit"
+     class="kit-image">
+>
+
+        <div class="url-box">
+            <span id="gk-away-url">https://i.ibb.co/zhPKDgWC/GK-away.png</span>
+
+            <button onclick="copyURL('gk-away-url', this)">
+                Copy
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- GOALKEEPER THIRD -->
+
+    <section class="kit-section">
+
+        <h2>Bayern Munich  Goalkeeper Third Kit</h2>
+
+        <img src="https://i.ibb.co/HL6r0MYd/GK-third.png"
+     alt="Bayern Munich GK Third Kit"
+     class="kit-image">
+>
+
+        <div class="url-box">
+            <span id="gk-third-url">https://i.ibb.co/HL6r0MYd/GK-third.png</span>
+
+            <button onclick="copyURL('gk-third-url', this)">
+                Copy
+            </button>
+        </div>
+
+    </section>
+
+</main>
+
+
+<script>
+
+function copyURL(id, button) {
+
+    const text = document.getElementById(id).innerText;
+
+    navigator.clipboard.writeText(text);
+
+    const oldText = button.innerText;
+
+    button.innerText = "Copied ✓";
+
+    setTimeout(function () {
+        button.innerText = oldText;
+    }, 1500);
+}
+
+</script>
+
+</body>
+</html>

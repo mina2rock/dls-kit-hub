@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>barcelona  DLS Kits | DLS Kit Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>DLS KIT HUB</h1>
+    <p>Find the latest Dream League Soccer kits.</p>
+</header>
+
+<main class="club-page">
+
+    <a href="index.html">← Back to Home</a>
+
+    <h1>barcelona  2026/27 DLS Kits</h1>
+
+    <p class="club-description">
+        Get the latest barcelona  Dream League Soccer kits.
+        Copy the logo or kit URL below and use it in Dream League Soccer.
+    </p>
+
+
+    <!-- CLUB LOGO -->
+
+    <section class="kit-section">
+
+        <h2>barcelona  DLS Logo</h2>
+
+        <img src="https://i.ibb.co/S42gBxjs/logo.png"
+     alt="barcelona FC Logo"
+     class="club-logo">
+
+        <div class="url-box">
+            <span id="logo-url">https://i.ibb.co/S42gBxjs/logo.png</span>
+
+            <button onclick="copyURL('logo-url', this)">
+                Copy
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- HOME KIT -->
+
+    <section class="kit-section">
+
+        <h2>barcelona  2026/27 Home Kit</h2>
+
+        <img src="https://i.ibb.co/JWNzKNd8/home-kit.png"
+     alt="barcelona Home Kit"
+     class="kit-image">
+
+        <div class="url-box">
+        <span id="home-url">https://i.ibb.co/JWNzKNd8/home-kit.png</span>
+
+            <button onclick="copyURL('home-url', this)">
+                Copy
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- AWAY KIT -->
+
+    <section class="kit-section">
+
+        <h2>barcelona  2026/27 Away Kit</h2>
+
+        <img src="https://i.ibb.co/cKP1k65j/away-kit.png"
+     alt="barcelona Away Kit"
+     class="kit-image">
+
+        <div class="url-box">
+            <span id="away-url">https://i.ibb.co/cKP1k65j/away-kit.png</span>
+
+            <button onclick="copyURL('away-url', this)">
+                Copy
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- THIRD KIT -->
+
+    <section class="kit-section">
+
+        <h2>barcelona  2026/27 Third Kit</h2>
+
+        <img src="https://i.ibb.co/W4ZQ9N6F/third-kit.png"
+     alt="barcelona Third Kit"
+     class="kit-image">
+
+        <div class="url-box">
+            <span id="third-url">https://i.ibb.co/W4ZQ9N6F/third-kit.png</span>
+
+            <button onclick="copyURL('third-url', this)">
+                Copy
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- GOALKEEPER HOME -->
+
+    <section class="kit-section">
+
+        <h2>barcelona  Goalkeeper Home Kit</h2>
+
+        <img src="https://i.ibb.co/m5dz7TCp/GK-home-kit.png"
+     alt="barcelona GK Home Kit"
+     class="kit-image">
+>
+
+        <div class="url-box">
+            <span id="gk-home-url">https://i.ibb.co/m5dz7TCp/GK-home-kit.png</span>
+
+            <button onclick="copyURL('gk-home-url', this)">
+                Copy
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- GOALKEEPER AWAY -->
+
+    <section class="kit-section">
+
+        <h2>barcelona  Goalkeeper Away Kit</h2>
+
+        <img src="https://i.ibb.co/1GkyZ0zd/GK-away-kit.png"
+     alt="barcelona GK Away Kit"
+     class="kit-image">
+>
+
+        <div class="url-box">
+            <span id="gk-away-url">https://i.ibb.co/1GkyZ0zd/GK-away-kit.png</span>
+
+            <button onclick="copyURL('gk-away-url', this)">
+                Copy
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- GOALKEEPER THIRD -->
+
+    <section class="kit-section">
+
+        <h2>barcelona  Goalkeeper Third Kit</h2>
+
+        <img src="https://i.ibb.co/zh3hjXLW/GK-third-kit.png"
+     alt="barcelona GK Third Kit"
+     class="kit-image">
+>
+
+        <div class="url-box">
+            <span id="gk-third-url">https://i.ibb.co/zh3hjXLW/GK-third-kit.png</span>
+
+            <button onclick="copyURL('gk-third-url', this)">
+                Copy
+            </button>
+        </div>
+
+    </section>
+
+</main>
+
+
+<script>
+
+function copyURL(id, button) {
+
+    const text = document.getElementById(id).innerText;
+
+    navigator.clipboard.writeText(text);
+
+    const oldText = button.innerText;
+
+    button.innerText = "Copied ✓";
+
+    setTimeout(function () {
+        button.innerText = oldText;
+    }, 1500);
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #1c2530;
+}
+
+/* TOP NAVIGATION */
+
+header {
+    background: #050b24;
+    color: white;
+padding: 25px 6%;
+align-items: center;
+}
+
+header h1 {
+    font-size: 30px;
+    padding-top: 25px;
+    letter-spacing: 1px;
+}
+
+header p {
+    color: #b8c1cc;
+    padding: 8px 0 25px;
+}
+
+/* MAIN CONTENT */
+
+main {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+/* SEARCH AREA */
+
+
+main section:first-child h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#clubSearch {
+    width: 65%;
+    max-width: 600px;
+    padding: 16px 20px;
+    font-size: 17px;
+    border: 2px solid #d7dce2;
+    border-radius: 8px;
+    outline: none;
+}
+
+#clubSearch:focus {
+    border-color: #16a34a;
+}
+
+button {
+    padding: 16px 25px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 8px;
+    background: #16a34a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #15803d;
+}
+
+/* LATEST KITS */
+
+main section:nth-child(2) h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+main section:nth-child(2) h3 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+main section:nth-child(2) p {
+    color: #68717c;
+    margin-bottom: 20px;
+}
+
+/* PHONE */
+
+@media (max-width: 650px) {
+    header {
+        padding: 0 5%;
+    }
+
+    main {
+        width: 94%;
+        margin-top: 20px;
+    }
+
+    main section:first-child {
+        padding: 25px 15px;
+    }
+
+    #clubSearch {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0 0;
+    }
+}
+/* ==============================
+   CLUB KIT PAGE
+================================ */
+
+.club-page {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    padding: 45px;
+    border-radius: 12px;
+}
+
+.club-page > a {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #16a34a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.club-page > h1 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.club-description {
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+
+/* EACH LOGO / KIT SECTION */
+
+.kit-section {
+    margin: 65px 0;
+    text-align: center;
+}
+
+.kit-section h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+
+/* TEMPORARY IMAGE AREA */
+
+.image-placeholder {
+    width: 512px;
+    max-width: 100%;
+    height: 420px;
+    margin: 0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eef1f4;
+    border: 2px dashed #b7bec7;
+    border-radius: 10px;
+
+    color: #6b7280;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* URL + COPY BUTTON */
+
+.url-box {
+    max-width: 750px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    background: #f1f3f5;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.url-box span {
+    flex: 1;
+    padding: 20px;
+
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    font-size: 16px;
+}
+
+.url-box button {
+    margin: 0;
+    border-radius: 0;
+    min-width: 110px;
+}
+
+
+/* PHONE */
+
+@media (max-width: 650px) {
+
+    .club-page {
+        width: 94%;
+        padding: 25px 15px;
+        margin: 20px auto;
+    }
+
+    .club-page > h1 {
+        font-size: 28px;
+    }
+
+    .kit-section h2 {
+        font-size: 23px;
+    }
+
+    .image-placeholder {
+        height: 300px;
+    }
+
+    .url-box {
+        flex-direction: column;
+        background: transparent;
+    }
+
+    .url-box span {
+        width: 100%;
+        background: #f1f3f5;
+    }
+
+    .url-box button {
+        width: 100%;
+    }
+}
+/* KIT IMAGES */
+
+.kit-image {
+    display: block;
+    width: 100%;
+    max-width: 512px;
+    height: auto;
+    margin: 20px auto;
+}
+header h1 span {
+    color: #00e65c;
+}
+/* HOMEPAGE NAVIGATION */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+
+.main-nav a.active {
+    background: #00e65c;
+    color: white;
+}
+.site-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+gap: 12px;
+    flex-shrink: 0;
+}
+/* HOMEPAGE HEADER LAYOUT */
+body:has(.main-nav) > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.site-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.hero-banner {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.hero-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+body:has(.main-nav) main {
+    margin-top: 0;
+}
+.hero-search {
+    border-radius: 42px;
+    overflow: hidden;
+}
+
+.hero-search input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.hero-search button {
+    background: #00e65c;
+    color: white;
+    border: none;
+    border-radius: 42px;
+    padding: 16px 28px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.hero-banner {
+    position: relative;
+}
+
+.hero-search {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    width: 65%;
+max-width: 850px;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 42px;
+    padding: 5px;
+    z-index: 2;
+}
+.hero-search .search-icon {
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.latest-header h2 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 32px;
+    color: #111111;
+}
+
+.latest-header h2::before {
+    content: "";
+    width: 12px;
+    height: 38px;
+    background: #00d957;
+    border-radius: 6px;
+}
+.latest-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 25px;
+}
+
+.view-all-btn {
+    color: #00d957;
+    border: 2px solid #00d957;
+    border-radius: 14px;
+    padding: 12px 30px;
+    text-decoration: none;
+    background: white;
+    font-size: 18px;
+}
+.kit-card {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin-left: 0;
+}
+
+.kit-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.latest-header {
+    margin-top: 20px;
+}
+.latest-header + p {
+    margin-left: 35px;
+}
+.kit-card {
+    position: relative;
+}
+
+.kit-view-btn {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: #00e65c;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.popular-clubs {
+    width: 100%;
+    background: white;
+    border-radius: 14px;
+    padding: 20px;
+    align-self: start;
+    height: 490px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 25px;
+}
+
+.hero-banner {
+    grid-column: 1 / -1;
+}
+.popular-club {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+}
+
+.popular-club img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+.right-sidebar {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.category-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+.category-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    inset: 0;
+}
+
+.category-icon {
+    position: relative;
+    z-index: 1;
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    margin-left: 12px;
+    flex-shrink: 0;
+}
+
+.category-text {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+
+.category-text strong {
+    font-size: 23px;
+    line-height: 1.1;
+}
+
+.category-text span {
+    font-size: 16px;
+}
+
+.club-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.club-page .kit-section {
+    width: 100%;
+    max-width: 750px;
+    box-sizing: border-box;
+}
+
+.club-page .kit-image {
+    width: 100%;
+    height: auto;
+}
+/* Mobile layout */
+@media (max-width: 600px) {
+    .hero-search {
+        width: 92%;
+        max-width: none;
+        bottom: 5%;
+        padding: 5px;
+    }
+
+    .hero-search input {
+        min-width: 0;
+        flex: 1;
+        width: 0;
+        font-size: 14px;
+    }
+
+    .hero-search button {
+    flex: 0 0 auto;
+    width: 85px;
+    font-size: 14px;
+    padding: 10px 8px;
+}
+
+.hero-search button {
+    flex: 0 0 auto;
+    width: 85px;
+    font-size: 14px;
+    padding: 10px 8px;
+}
+
+.hero-search input {
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
+    font-size: 14px;
+}
+    }
+
+    .hero-search .search-icon {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+/* Mobile layout for Latest Kits and Popular Clubs */
+@media (max-width: 600px) {
+
+    main {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .hero-banner {
+        grid-column: 1 / -1;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .hero-banner img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .popular-clubs {
+        width: 100%;
+        height: auto;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+}
+/* Fix stadium banner on mobile */
+@media (max-width: 600px) {
+    main > .hero-banner {
+        grid-column: 1 / -1;
+        width: 100%;
+        position: relative;
+    }
+
+    main > .hero-banner > img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-search {
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+        transform: translateX(-50%);
+        width: 92%;
+        z-index: 2;
+    }
+}
+@media (max-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    main > .hero-banner {
+        display: block;
+        width: 100%;
+        flex: none;
+    }
+
+    main > .hero-banner > img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 600px) {
+    header {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .site-brand {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .main-nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+/* Desktop header search */
+.desktop-search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    max-width: 500px;
+    margin: 0 25px;
+}
+
+.desktop-search input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+.desktop-search button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background: #00e65c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Mobile: keep search on stadium banner */
+@media (max-width: 600px) {
+    .desktop-search {
+        display: none;
+    }
+}
+/* Hide banner search on desktop */
+@media (min-width: 601px) {
+    .hero-banner .hero-search {
+        display: none;
+    }
+}
+/* Desktop header search */
+@media (min-width: 601px) {
+    header .desktop-search {
+        display: flex !important;
+        align-items: center;
+        gap: 10px;
+        flex: 1;
+        max-width: 550px;
+        margin: 0 25px;
+    }
+
+    header .desktop-search input {
+        flex: 1;
+        min-width: 0;
+        padding: 12px 16px;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+    }
+
+    header .desktop-search button {
+        padding: 12px 20px;
+        background: #00e65c;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+}
+
+/* Keep desktop search hidden on mobile */
+@media (max-width: 600px) {
+    header .desktop-search {
+        display: none !important;
+    }
+}
+/* DESKTOP HEADER ALIGNMENT */
+@media (min-width: 601px) {
+
+    body:has(.desktop-search) header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 25px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    header .site-brand {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 25px;
+    }
+
+    header .desktop-search {
+        display: flex !important;
+        align-items: center;
+        flex: 1;
+        max-width: none;
+        min-width: 0;
+        margin: 0;
+        gap: 10px;
+    }
+
+    header .desktop-search input {
+        flex: 1;
+        width: 100%;
+        min-width: 0;
+    }
+
+    header .main-nav {
+        margin-left: auto;
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+}
+/* EXPAND DESKTOP SEARCH BAR */
+@media (min-width: 601px) {
+
+    header .site-brand {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 25px;
+    }
+
+    header .brand-text {
+        flex-shrink: 0;
+    }
+
+    header .desktop-search {
+        display: flex !important;
+        flex: 1 1 0%;
+        width: auto;
+        max-width: none;
+        min-width: 0;
+        margin: 0;
+        gap: 10px;
+    }
+
+    header .desktop-search input {
+        flex: 1;
+        width: 100%;
+        min-width: 0;
+    }
+
+    header .main-nav {
+        margin-left: auto;
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+}
+
+/* FIX DLS KIT HUB MOBILE HEADER */
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 12px !important;
+    }
+
+    header .site-brand {
+        display: flex !important;
+        align-items: center !important;
+        gap: 10px !important;
+        width: 100% !important;
+    }
+
+    header .site-brand > img {
+        width: 42px !important;
+        height: 42px !important;
+        flex-shrink: 0 !important;
+    }
+
+    header .brand-text {
+        flex: 1 1 auto !important;
+        min-width: 0 !important;
+    }
+
+    header .brand-text h1 {
+        font-size: 20px !important;
+        white-space: nowrap !important;
+        margin: 0 !important;
+    }
+
+    header .brand-text p {
+        font-size: 9px !important;
+        white-space: nowrap !important;
+        margin-top: 4px !important;
+    }
+
+    header .main-nav {
+        flex-shrink: 0 !important;
+        margin: 0 !important;
+    }
+
+    header .main-nav a {
+        font-size: 12px !important;
+        white-space: nowrap !important;
+        padding: 5px !important;
+    }
+
+    header .desktop-search {
+        display: none !important;
+    }
+}
+
+/* SLIMMER MOBILE SEARCH BAR */
+@media (max-width: 600px) {
+    .hero-search {
+        padding: 4px !important;
+        border-radius: 30px !important;
+        align-items: center;
+    }
+
+    .hero-search input {
+        height: 38px !important;
+        padding: 6px 10px !important;
+        font-size: 14px !important;
+    }
+
+    .hero-search button {
+        height: 38px !important;
+        padding: 5px 12px !important;
+        font-size: 13px !important;
+        border-radius: 24px !important;
+    }
+
+    .hero-search .search-icon {
+        margin-left: 8px !important;
+        margin-right: 8px !important;
+    }
+
+    .hero-search .search-icon svg {
+        width: 22px !important;
+        height: 22px !important;
+    }
+}
+
+/* FIX CLUB LOGO ON MOBILE */
+@media (max-width: 600px) {
+    .club-page .club-logo {
+        display: block;
+        width: 100% !important;
+        max-width: 220px !important;
+        height: auto !important;
+        object-fit: contain;
+        margin: 20px auto !important;
+    }
+}
+.not-released {
+    color: #dc2626;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 10px;
+}
+/* CONTACT US POPUP */
+
+.contact-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-modal.active {
+    display: flex;
+}
+
+.contact-box {
+    position: relative;
+    background: #ffffff;
+    color: #111827;
+    width: 100%;
+    max-width: 480px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 18px;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    text-align: center;
+}
+
+.contact-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #64748b;
+    cursor: pointer;
+}
+
+.contact-icon {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.contact-box h2 {
+    margin: 0 0 10px;
+    font-size: 28px;
+}
+
+.contact-box p {
+    color: #64748b;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 9px;
+    margin-top: 20px;
+}
+
+#contactForm label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#contactForm input,
+#contactForm select,
+#contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font: inherit;
+    box-sizing: border-box;
+    background: white;
+    color: #111827;
+}
+
+#contactForm textarea {
+    resize: vertical;
+}
+
+.contact-send {
+    margin-top: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-send:hover {
+    background: #0056b3;
+}
+
+.contact-email {
+    margin-top: 20px;
+}
+
+.contact-email a {
+    color: #007bff;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    .contact-box {
+        padding: 24px 18px;
+    }
+}
+/* MOBILE CONTACT US HEADER FIX */
+@media (max-width: 600px) {
+    body:has(.main-nav) > header {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 8px !important;
+    }
+
+    body:has(.main-nav) > header .site-brand {
+        width: auto !important;
+        flex: 1 1 auto;
+        min-width: 0;
+        justify-content: flex-start !important;
+    }
+
+    body:has(.main-nav) > header .main-nav {
+        width: auto !important;
+        flex: 0 0 auto !important;
+        margin: 0 !important;
+        justify-content: flex-end !important;
+    }
+
+    body:has(.main-nav) > header .main-nav a {
+        display: inline-block;
+        font-size: 11px !important;
+        padding: 8px !important;
+        white-space: nowrap;
+        border: 1px solid #00e65c;
+        border-radius: 6px;
+    }
+}
+/* FIX CONTACT US CLOSE BUTTON */
+.contact-box {
+    position: relative;
+}
+
+.contact-box .contact-close {
+    position: absolute !important;
+    top: 12px !important;
+    right: 12px !important;
+    left: auto !important;
+    bottom: auto !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+    padding: 0 !important;
+
+    background: #f1f5f9 !important;
+    color: #334155 !important;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 10;
+}

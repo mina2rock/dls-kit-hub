@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ss lazio  DLS Kits | DLS Kit Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>DLS KIT HUB</h1>
+    <p>Find the latest Dream League Soccer kits.</p>
+</header>
+
+<main class="club-page">
+
+    <a href="index.html">← Back to Home</a>
+
+    <h1>ss lazio  2026/27 DLS Kits</h1>
+
+    <p class="club-description">
+        Get the latest ss lazio  Dream League Soccer kits.
+        Copy the logo or kit URL below and use it in Dream League Soccer.
+    </p>
+
+
+    <!-- CLUB LOGO -->
+
+    <section class="kit-section">
+
+        <h2>ss lazio  DLS Logo</h2>
+
+        <img src="https://i.ibb.co/gZ5N3DJG/logo.png"
+     alt="ss lazio FC Logo"
+     class="club-logo">
+
+        <div class="url-box">
+            <span id="logo-url">https://i.ibb.co/gZ5N3DJG/logo.png</span>
+
+            <button onclick="copyURL('logo-url', this)">
+                Copy
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- HOME KIT -->
+
+    <section class="kit-section">
+
+        <h2>ss lazio  2026/27 Home Kit</h2>
+
+        <img src="https://i.ibb.co/n8RQH9xt/home-kit.png"
+     alt="ss lazio Home Kit"
+     class="kit-image">
+
+        <div class="url-box">
+        <span id="home-url">https://i.ibb.co/n8RQH9xt/home-kit.png</span>
+
+            <button onclick="copyURL('home-url', this)">
+                Copy
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- AWAY KIT -->
+
+    <section class="kit-section">
+
+        <h2>ss lazio  2026/27 Away Kit</h2>
+
+        <img src="https://i.ibb.co/XkFhBSMM/away-kit.png"
+     alt="ss lazio Away Kit"
+     class="kit-image">
+
+        <div class="url-box">
+            <span id="away-url">https://i.ibb.co/XkFhBSMM/away-kit.png</span>
+
+            <button onclick="copyURL('away-url', this)">
+                Copy
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- THIRD KIT -->
+
+    <section class="kit-section">
+
+        <h2>ss lazio  2026/27 Third Kit</h2>
+
+        <img src="https://i.ibb.co/jvFNjsSn/third-kit.png"
+     alt="ss lazio Third Kit"
+     class="kit-image">
+
+        <div class="url-box">
+            <span id="third-url">https://i.ibb.co/jvFNjsSn/third-kit.png</span>
+
+            <button onclick="copyURL('third-url', this)">
+                Copy
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- GOALKEEPER HOME -->
+
+    <section class="kit-section">
+
+        <h2>ss lazio  Goalkeeper Home Kit</h2>
+
+        <img src="https://i.ibb.co/whQHF5fg/GK-home-kit.png"
+     alt="ss lazio GK Home Kit"
+     class="kit-image">
+>
+
+        <div class="url-box">
+            <span id="gk-home-url">https://i.ibb.co/whQHF5fg/GK-home-kit.png</span>
+
+            <button onclick="copyURL('gk-home-url', this)">
+                Copy
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- GOALKEEPER AWAY -->
+
+    <section class="kit-section">
+
+        <h2>ss lazio  Goalkeeper Away Kit</h2>
+
+        <img src="https://i.ibb.co/S4s50Y3P/GK-away-kit.png"
+     alt="ss lazio GK Away Kit"
+     class="kit-image">
+>
+
+        <div class="url-box">
+            <span id="gk-away-url">https://i.ibb.co/S4s50Y3P/GK-away-kit.png</span>
+
+            <button onclick="copyURL('gk-away-url', this)">
+                Copy
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- GOALKEEPER THIRD -->
+
+<section class="kit-section">
+
+    <h2>ss lazio Goalkeeper Third Kit</h2>
+
+    <p class="not-released">
+        Not Yet Released
+    </p>
+
+</section>
+
+</main>
+
+
+<script>
+
+function copyURL(id, button) {
+
+    const text = document.getElementById(id).innerText;
+
+    navigator.clipboard.writeText(text);
+
+    const oldText = button.innerText;
+
+    button.innerText = "Copied ✓";
+
+    setTimeout(function () {
+        button.innerText = oldText;
+    }, 1500);
+}
+
+</script>
+
+</body>
+</html>

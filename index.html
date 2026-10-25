@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLS Kit Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="site-brand">
+            <img src="football-logo.png.png" alt="DLS Kit Hub Logo" class="site-logo">
+
+<div class="brand-text">
+    <h1>DLS <span>KIT HUB</span></h1>
+    <p>KITS · LOGOS · CARDS · MORE</p>
+</div>
+
+<div class="desktop-search">
+    <input type="text"
+           id="desktopClubSearch"
+           placeholder="Search for club( e.g Real Madrid, Barcelona, Manchester United)">
+    <button onclick="searchClub('desktopClubSearch')">
+        Search
+    </button>
+</div>
+        <nav class="main-nav">
+    <a href="#" id="contactBtn">✉ Contact Us</a>
+</nav>
+    </header>
+
+    <main>
+        <div class="hero-banner">
+    <img src="football-banner.png.png" alt="DLS 26 Stadium Banner">
+    <div class="hero-search">
+    <span class="search-icon">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round">
+        <circle cx="10.5" cy="10.5" r="7"></circle>
+        <path d="M16 16L22 22"></path>
+    </svg>
+</span>
+    <input
+    type="text"
+    id="clubSearch"
+    placeholder="Search for club( e.g Real Madrid, Barcelona, Manchester United)">
+    <button onclick="searchClub()">Search</button>
+</div>
+</div>
+
+        <section>
+            <div class="latest-header">
+    <h2>Latest Kits</h2>
+    <a href="kits.html" class="view-all-btn">View All Club</a>
+</div>
+
+<p class="latest-subtitle">
+    Check out the latest Dream League Soccer 2026 Kits
+</p>
+
+            <a href="manchester-united.html" class="kit-card">
+    <img src="Manchester-united-card.png.png" alt="Manchester United 2026/27 Kits">
+    <span class="kit-view-btn">View Kits</span>
+</a>
+<a href="manchester city.html" class="kit-card">
+    <img src="Manchester-city-card.png.png" alt="Manchester City">
+    <span class="kit-view-btn">View Kits</span>
+</a>
+<a href="real-madrid.html" class="kit-card">
+    <img src="real-madrid.png.png" alt="Real Madrid Kits">
+    <span class="kit-view-btn">View Kits</span>
+</a>
+<a href="barcelona.html" class="kit-card">
+    <img src="bacerlona.png.png" alt="Barcelona Kits">
+    <span class="kit-view-btn">View Kits</span>
+</a>
+        </section>
+        <div class="right-sidebar">
+        <aside class="popular-clubs">
+    <h2>🔥 Popular Clubs</h2>
+    <div class="popular-club">
+    <img src="manchester-united-mini-logo.png.png" alt="Manchester United">
+    <span>Manchester United</span>
+</div>
+<div class="popular-club">
+    <img src="manchester-city-mini-logo.png.png" alt="Manchester City">
+    <span>Manchester City</span>
+</div>
+<div class="popular-club">
+    <img src="real-madrid-mini-logo.png.png" alt="Real Madrid">
+    <span>Real Madrid</span>
+</div>
+<div class="popular-club">
+    <img src="barcelona-mini-logo.png.png" alt="Barcelona">
+    <span>Barcelona</span>
+</div>
+<div class="popular-club">
+    <img src="liverpool-mini-logo.png.png" alt="Liverpool">
+    <span>Liverpool</span>
+</div>
+
+<div class="popular-club">
+    <img src="chelsea-mini-logo.png.png" alt="Chelsea">
+    <span>Chelsea</span>
+</div>
+</aside>
+</div> <!-- closes right-sidebar -->
+    </main>
+
+<script>
+function searchClub(inputId = "clubSearch") {
+    const search = document.getElementById(inputId).value.trim().toLowerCase();
+
+    const clubs = {
+        "manchester united": "manchester-united.html",
+        "Manchester United": "manchester-united.html",
+        "Manchester united": "manchester-united.html",
+        "manchester United": "manchester-united.html",
+        "man utd": "manchester-united.html",
+        "Man Utd": "manchester-united.html",
+        "Man utd": "manchester-united.html",
+        "man Utd": "manchester-united.html",
+        "man united": "manchester-united.html",
+        "Man United": "manchester-united.html",
+        "Man united": "manchester-united.html",
+        "man United": "manchester-united.html",
+
+        "manchester city": "manchester-city.html",
+        "Manchester City": "manchester-city.html",
+        "Manchester city": "manchester-city.html",
+        "manchester City": "manchester-city.html",
+        "man city": "manchester-city.html",
+        "Man City": "manchester-city.html",
+        "Man city": "manchester-city.html",
+        "man City": "manchester-city.html",
+
+        "arsenal": "arsenal.html",
+        "Arsenal": "arsenal.html",
+
+        "chelsea": "Chelsea.html",
+        "Chelsea": "Chelsea.html",
+
+        "liverpool": "Liverpool.html",
+        "Liverpool": "Liverpool.html",
+
+        "tottenham": "Tottenham.html",
+        "Tottenham": "Tottenham.html",
+"tottenham hotspur": "Tottenham.html",
+"Tottenham Hotspur": "Tottenham.html",
+"Tottenham hotspur": "Tottenham.html",
+"tottenham Hotspur": "Tottenham.html",
+"spurs": "Tottenham.html",
+"Spurs": "Tottenham.html",
+
+// LA LIGA
+"real madrid": "real madrid.html",
+"Real Madrid": "real madrid.html",
+"Real madrid": "real madrid.html",
+"real Madrid": "real madrid.html",
+"madrid": "real madrid.html",
+"Madrid": "real madrid.html",
+
+"barcelona": "barcelona.html",
+"barce": "barcelona.html",
+
+"athletic club": "athletic-club.html",
+"bilbao": "athletic-club.html",
+"Bilbao": "athletic-club.html",
+"Athletic Club": "athletic-club.html",
+"Athletic club": "athletic-club.html",
+"athletic Club": "athletic-club.html",
+"athletic bilbao": "athletic-club.html",
+"Athletic Bilbao": "athletic-club.html",
+"Athletic bilbao": "athletic-club.html",
+"athletic Bilbao": "athletic-club.html",
+
+"atletico madrid": "atletico-madrid.html",
+"Atletico Madrid": "atletico-madrid.html",
+"Atletico madrid": "atletico-madrid.html",
+"atletico Madrid": "atletico-madrid.html",
+"atlético madrid": "atletico-madrid.html",
+"Atlético Madrid": "atletico-madrid.html",
+"Atlético madrid": "atletico-madrid.html",
+"atlético Madrid": "atletico-madrid.html",
+
+// SERIE A
+"ac milan": "ac-milan.html",
+"AC milan": "ac-milan.html",
+"ac Milan": "ac-milan.html",
+"AC Milan": "ac-milan.html",
+"inter milan": "inter-milan.html",
+"inter": "inter-milan.html",
+"napoli": "napoli.html",
+"Napoli": "napoli.html",
+"juventus": "juventus.html",
+"Juventus": "juventus.html",
+"roma": "roma.html",
+"Roma": "roma.html",
+"lazio": "lazio.html",
+"Lazio": "lazio.html",
+
+// BUNDESLIGA
+"bayern munich": "bayern-munich.html",
+"Bayern Munich": "bayern-munich.html",
+"Bayern munich": "bayern-munich.html",
+"bayern Munich": "bayern-munich.html",
+"bayern": "bayern-munich.html",
+"Bayern": "bayern-munich.html",
+
+"borussia dortmund": "dortmund.html",
+"Borussia Dortmund": "dortmund.html",
+"Borussia dortmund": "dortmund.html",
+"borussia Dortmund": "dortmund.html",
+"borussia": "dortmund.html",
+"Borussia": "dortmund.html",
+"dortmund": "dortmund.html",
+"Dortmund": "dortmund.html",
+"bvb": "dortmund.html",
+"BVB": "dortmund.html",
+
+"rb leipzig": "rb-leipzig.html",
+"leipzig": "rb-leipzig.html",
+"RB leipzig": "rb-leipzig.html",
+"rb Leipzig": "rb-leipzig.html",
+"Leipzig": "rb-leipzig.html",
+
+// LIGUE 1
+"psg": "psg.html",
+"PSG": "psg.html",
+"paris saint-germain": "psg.html",
+
+"lyon": "lyon.html",
+"Lyon": "lyon.html",
+"olympique lyonnais": "lyon.html",
+"Olympique Lyonnais": "lyon.html",
+"Olympique lyonnais": "lyon.html",
+"olympique Lyonnais": "lyon.html",
+
+// LIGA PORTUGAL
+"fc porto": "fc-porto.html",
+"FC porto": "fc-porto.html",
+"Porto": "fc-porto.html",
+"Fc porto": "fc-porto.html",
+"FC Porto": "fc-porto.html",
+"porto": "fc-porto.html",
+
+"SL Benfica": "sl-benfica.html",
+"benfica": "sl-benfica.html",
+"sl benfica": "sl-benfica.html",
+"sl Benfica": "sl-benfica.html",
+"SL benfica": "sl-benfica.html",
+"Benfica": "sl-benfica.html",
+
+"sporting CP": "sporting-cp.html",
+"sporting": "sporting-cp.html",
+"Sporting": "sporting-cp.html",
+"Sporting CP": "sporting-cp.html",
+    };
+
+    if (clubs[search]) {
+        window.location.href = clubs[search];
+    } else {
+        alert("Club not found!");
+    }
+}
+
+document.getElementById("clubSearch").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        searchClub();
+    }
+});
+document.getElementById("desktopClubSearch").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        searchClub("desktopClubSearch");
+    }
+});
+</script>
+<!-- CONTACT US POPUP -->
+<div id="contactModal" class="contact-modal" aria-hidden="true">
+    <div class="contact-box" role="dialog"
+         aria-modal="true" aria-labelledby="contactTitle">
+
+        <button type="button" id="closeContact" class="contact-close"
+                aria-label="Close contact form">&times;</button>
+
+        <div class="contact-icon">✉</div>
+        <h2 id="contactTitle">Contact Us</h2>
+
+        <p>
+            Found an incorrect kit, have a question,
+            or want to suggest a club?
+            We'd love to hear from you!
+        </p>
+
+        <form id="contactForm">
+            <label for="contactName">Your Name</label>
+            <input type="text"
+       id="contactName"
+       name="name"
+       autocomplete="name"
+       placeholder="Enter your name"
+       required>
+
+            <label for="contactEmail">Your Email</label>
+            <input type="email"
+       id="contactEmail"
+       name="email"
+       autocomplete="email"
+       placeholder="Enter your email"
+       required>
+
+            <label for="contactSubject">Subject</label>
+            <select id="contactSubject" required>
+                <option value="">Select a subject</option>
+                <option value="Incorrect Kit">Incorrect Kit</option>
+                <option value="Club Suggestion">Club Suggestion</option>
+                <option value="Broken Link">Broken Link</option>
+                <option value="General Question">General Question</option>
+            </select>
+
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" rows="4"
+                      placeholder="Write your message..."
+                      required></textarea>
+
+            <button type="submit" class="contact-send">
+                ✉ Send Message
+            </button>
+        </form>
+
+        <p class="contact-email">
+            Or email us directly at
+            <a href="mailto:dlskithub@gmail.com">
+                dlskithub@gmail.com
+            </a>
+        </p>
+    </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const contactBtn = document.getElementById("contactBtn");
+    const modal = document.getElementById("contactModal");
+    const closeBtn = document.getElementById("closeContact");
+    const form = document.getElementById("contactForm");
+
+    if (!contactBtn || !modal || !closeBtn || !form) return;
+
+    let previousFocus;
+
+    function openContact() {
+        previousFocus = document.activeElement;
+        modal.classList.add("active");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+        closeBtn.focus();
+    }
+
+    function closeContact() {
+        modal.classList.remove("active");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+        if (previousFocus) previousFocus.focus();
+    }
+
+    contactBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        openContact();
+    });
+
+    closeBtn.addEventListener("click", closeContact);
+
+    modal.addEventListener("click", function (event) {
+        if (event.target === modal) closeContact();
+    });
+
+    document.addEventListener("keydown", function (event) {
+        if (!modal.classList.contains("active")) return;
+
+        if (event.key === "Escape") {
+            closeContact();
+        }
+
+        if (event.key === "Tab") {
+            const focusable = Array.from(
+                modal.querySelectorAll(
+                    'button, a[href], input, select, textarea'
+                )
+            ).filter(el => !el.disabled);
+
+            const first = focusable[0];
+            const last = focusable[focusable.length - 1];
+
+            if (event.shiftKey && document.activeElement === first) {
+                event.preventDefault();
+                last.focus();
+            } else if (!event.shiftKey && document.activeElement === last) {
+                event.preventDefault();
+                first.focus();
+            }
+        }
+    });
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById("contactName").value.trim();
+        const email = document.getElementById("contactEmail").value.trim();
+        const subject = document.getElementById("contactSubject").value;
+        const message = document.getElementById("contactMessage").value.trim();
+
+        if (!name || !email || !subject || !message) return;
+
+        const emailSubject = "DLS KIT HUB - " + subject;
+        const emailBody =
+            "Name: " + name + "\n" +
+            "Email: " + email + "\n" +
+            "Subject: " + subject + "\n\n" +
+            "Message:\n" + message;
+
+        const mailtoLink =
+            "mailto:dlskithub@gmail.com" +
+            "?subject=" + encodeURIComponent(emailSubject) +
+            "&body=" + encodeURIComponent(emailBody);
+
+        window.location.href = mailtoLink;
+    });
+});
+</script>
+</body>
+</html>
